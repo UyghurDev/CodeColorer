@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scheme name="C/C++ Files" extension="*.cpp;*.h;*.cxx;*.c;">
+ <groups>
+  <group name="Default" color="Black" bgcolor="White" bold="false" italic="false" underline="false" />
+  <group name="Macros" color="Red" bgcolor="White" bold="false" italic="false" underline="false">
+   <bracket start="#" end="$none" carry="\" onlybegin="false" />
+  </group>
+  <group name="Numerics" color="Orange" bgcolor="White" bold="false" italic="false" underline="false">
+   <regex value="(\d*?\.\d+?)">(?&lt;=(\W))(\d*?\.\d+?)(?=(\W))</regex>
+   <regex value="(\d*?\.\d+?f)">(?&lt;=(\W))(\d*?\.\d+?f)(?=(\W))</regex>
+   <regex value="(\d+?)">(?&lt;=(\W))(\d+?)(?=(\W))</regex>
+   <regex value="(0[x|X][\d|A|B|C|D|E|F|a|b|c|d|e|f]+?)">(?&lt;=(\W))(0[x|X][\d|A|B|C|D|E|F|a|b|c|d|e|f]+?)(?=(\W))</regex>
+  </group>
+  <group name="Types" color="Blue" bgcolor="White" bold="false" italic="false" underline="false">
+    <word>int</word>
+    <word>long</word>
+    <word>void</word>
+    <word>char</word>
+    <word>unsigned</word>
+    <word>double</word>
+    <word>short</word>
+    <word>float</word>
+    <word>__int64</word>
+    <word>__int8</word>
+    <word>bool</word>
+    <word>wchar_t</word>
+    <word>union</word>
+    <word>typedef</word>
+    <word>static</word>
+    <word>const</word>
+    <word>class</word>
+    <word>__int16</word>
+    <word>__int32</word>
+    <word>int</word>
+    <word>signed</word>
+    <word>struct</word>
+  </group>
+  <group name="Identificators" color="DarkBlue" bgcolor="White" bold="false" italic="false" underline="false">
+   <word>_export</word>
+   <word>_cdecl</word>
+   <word>do</word>
+   <word>__asm</word>
+   <word>__stdcall</word>
+   <word>else</word>
+   <word>inline</word>
+   <word>static_cast</word>
+   <word>sizeof</word>
+   <word>typeid</word>
+   <word>__export</word>
+   <word>return</word>
+   <word>volatile</word>
+   <word>_fastcall</word>
+   <word>operator</word>
+   <word>continue</word>
+   <word>__closure</word>
+   <word>__classid</word>
+   <word>try</word>
+   <word>dynamic_cast</word>
+   <word>__pascal</word>
+   <word>reinterpret_cast</word>
+   <word>enum</word>
+   <word>if</word>
+   <word>__rtti</word>
+   <word>asm</word>
+   <word>virtual</word>
+   <word>_stdcall</word>
+   <word>__finally</word>
+   <word>switch</word>
+   <word>case</word>
+   <word>mutable</word>
+   <word>__automated</word>
+   <word>__dispid</word>
+   <word>delete</word>
+   <word>__try</word>
+   <word>this</word>
+   <word>goto</word>
+   <word>const_cast</word>
+   <word>catch</word>
+   <word>extern</word>
+   <word>_pascal</word>
+   <word>default</word>
+   <word>cdecl</word>
+   <word>_import</word>
+   <word>public</word>
+   <word>__thread</word>
+   <word>using</word>
+   <word>throw</word>
+   <word>template</word>
+   <word>__except</word>
+   <word>__declspec</word>
+   <word>typename</word>
+   <word>private</word>
+   <word>__property</word>
+   <word>pascal</word>
+   <word>friend</word>
+   <word>auto</word>
+   <word>new</word>
+   <word>break</word>
+   <word>explicit</word>
+   <word>__fastcall</word>
+   <word>_asm</word>
+   <word>__cdecl</word>
+   <word>protected</word>
+   <word>true</word>
+   <word>while</word>
+   <word>void</word>
+   <word>false</word>
+   <word>namespace</word>
+   <word>for</word>
+   <word>register</word>
+   <word>__published</word>
+   <word>__import</word>
+   </group>
+  <group name="Comments" color="DarkGreen" bgcolor="#eeeeee" bold="false" italic="false" underline="false">
+   <bracket start="//" end="$none" carry="$none" onlybegin="false" />
+   <bracket start="/*" end="*/" carry="$any" onlybegin="false" />
+  </group>
+  <group name="Strings" color="DarkRed" bgcolor="White" bold="false" italic="false" underline="false">
+   <bracket start="&apos;" end="&apos;" carry="\" onlybegin="false" />
+   <bracket start="&quot;" end="&quot;" carry="\" onlybegin="false" />
+   <bracket start="L&quot;" end="&quot;" carry="\" onlybegin="false" />
+  </group>
+ </groups>
+</scheme>

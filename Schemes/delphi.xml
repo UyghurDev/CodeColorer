@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scheme name="Delphi Files" extension="*.pas;">
+ <groups>
+  <group name="Default" color="Black" bgcolor="White" bold="false" italic="false" underline="false" />
+  <group name="Macros" color="Red" bgcolor="White" bold="false" italic="false" underline="false">
+   <bracket start="#" end="$none" carry="\" onlybegin="false" />
+  </group>
+  <group name="Numerics" color="Orange" bgcolor="White" bold="false" italic="false" underline="false">
+   <regex value="(\d*?\.\d+?)">(?&lt;=(\W))(\d*?\.\d+?)(?=(\W))</regex>
+   <regex value="(\d+?)">(?&lt;=(\W))(\d+?)(?=(\W))</regex>
+   <regex value="($[\d|A|B|C|D|E|F|a|b|c|d|e|f]+?)">(?&lt;=(\W))($[\d|A|B|C|D|E|F|a|b|c|d|e|f]+?)(?=(\W))</regex>
+  </group>
+  <group name="Types" color="Blue" bgcolor="White" bold="false" italic="false" underline="false">
+    <word anysize="true">string</word>
+    <word anysize="true">var</word>
+    <word anysize="true">type</word>
+    <word anysize="true">record</word>
+    <word anysize="true">class</word>
+    <word anysize="true">begin</word>
+    <word anysize="true">end</word>
+    <word anysize="true">program</word>
+    <word anysize="true">nil</word>
+    <word anysize="true">file</word>
+    <word anysize="true">const</word>
+    <word anysize="true">array</word>
+    <word anysize="true">unit</word>
+  </group>
+  <group name="Identificators" color="DarkBlue" bgcolor="White" bold="false" italic="false" underline="false">
+    <word anysize="true">do</word>
+    <word anysize="true">constructor</word>
+    <word anysize="true">procedure</word>
+    <word anysize="true">inline</word>
+    <word anysize="true">else</word>
+    <word anysize="true">break</word>
+    <word anysize="true">writeonly</word>
+    <word anysize="true">while</word>
+    <word anysize="true">until</word>
+    <word anysize="true">resourcestring</word>
+    <word anysize="true">except</word>
+    <word anysize="true">raise</word>
+    <word anysize="true">continue</word>
+    <word anysize="true">is</word>
+    <word anysize="true">try</word>
+    <word anysize="true">absolute</word>
+    <word anysize="true">overload</word>
+    <word anysize="true">uses</word>
+    <word anysize="true">export</word>
+    <word anysize="true">set</word>
+    <word anysize="true">if</word>
+    <word anysize="true">near</word>
+    <word anysize="true">as</word>
+    <word anysize="true">asm</word>
+    <word anysize="true">exports</word>
+    <word anysize="true">in</word>
+    <word anysize="true">message</word>
+    <word anysize="true">finalization</word>
+    <word anysize="true">virtual</word>
+    <word anysize="true">resident</word>
+    <word anysize="true">read</word>
+    <word anysize="true">case</word>
+    <word anysize="true">of</word>
+    <word anysize="true">div</word>
+    <word anysize="true">destructor</word>
+    <word anysize="true">published</word>
+    <word anysize="true">object</word>
+    <word anysize="true">shl</word>
+    <word anysize="true">repeat</word>
+    <word anysize="true">dispid</word>
+    <word anysize="true">shr</word>
+    <word anysize="true">default</word>
+    <word anysize="true">external</word>
+    <word anysize="true">readonly</word>
+    <word anysize="true">for</word>
+    <word anysize="true">cdecl</word>
+    <word anysize="true">protected</word>
+    <word anysize="true">inherited</word>
+    <word anysize="true">xor</word>
+    <word anysize="true">public</word>
+    <word anysize="true">goto</word>
+    <word anysize="true">property</word>
+    <word anysize="true">library</word>
+    <word anysize="true">finally</word>
+    <word anysize="true">forward</word>
+    <word anysize="true">packed</word>
+    <word anysize="true">out</word>
+    <word anysize="true">not</word>
+    <word anysize="true">abstract</word>
+    <word anysize="true">initialization</word>
+    <word anysize="true">automated</word>
+    <word anysize="true">label</word>
+    <word anysize="true">stringresource</word>
+    <word anysize="true">private</word>
+    <word anysize="true">pascal</word>
+    <word anysize="true">then</word>
+    <word anysize="true">far</word>
+    <word anysize="true">write</word>
+    <word anysize="true">with</word>
+    <word anysize="true">safecall</word>
+    <word anysize="true">to</word>
+    <word anysize="true">nodefault</word>
+    <word anysize="true">reintroduce</word>
+    <word anysize="true">interface</word>
+    <word anysize="true">stdcall</word>
+    <word anysize="true">function</word>
+    <word anysize="true">assembler</word>
+    <word anysize="true">stored</word>
+    <word anysize="true">dispinterface</word>
+    <word anysize="true">dynamic</word>
+    <word anysize="true">mod</word>
+    <word anysize="true">index</word>
+    <word anysize="true">exit</word>
+    <word anysize="true">and</word>
+    <word anysize="true">downto</word>
+    <word anysize="true">threadvar</word>
+    <word anysize="true">register</word>
+    <word anysize="true">override</word>
+    <word anysize="true">or</word>
+    <word anysize="true">implementation</word>
+  </group>
+  <group name="Comments" color="DarkGreen" bgcolor="#eeeeee" bold="false" italic="false" underline="false">
+   <bracket start="//" end="$none" carry="$none" onlybegin="false" />
+   <bracket start="{" end="}" carry="$any" onlybegin="false" />
+   <bracket start="(*" end="*)" carry="$any" onlybegin="false" />
+  </group>
+  <group name="Strings" color="DarkRed" bgcolor="White" bold="false" italic="false" underline="false">
+   <bracket start="&apos;" end="&apos;" carry="\" onlybegin="false" />
+   <bracket start="&quot;" end="&quot;" carry="\" onlybegin="false" />
+  </group>
+ </groups>
+</scheme>

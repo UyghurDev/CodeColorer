@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<scheme name="PHP Files" extension="*.php;.php4;.php3;.php5;">
+  <groups>
+    <group name="Default" color="Black" bgcolor="White" bold="false" italic="false" underline="false" />
+    <group name="Macros" color="Red" bgcolor="White" bold="false" italic="false" underline="false">
+      <bracket start="#" end="$none" carry="\" onlybegin="false" />
+    </group>
+    <group name="Numerics" color="Orange" bgcolor="White" bold="false" italic="false" underline="false">
+      <regex value="(\d*?\.\d+?)">(?&lt;=(\W))(\d*?\.\d+?)(?=(\W))</regex>
+      <regex value="(\d+?)">(?&lt;=(\W))(\d+?)(?=(\W))</regex>
+      <regex value="(0[x|X][\d|A|B|C|D|E|F|a|b|c|d|e|f]+?)">(?&lt;=(\W))(0[x|X][\d|A|B|C|D|E|F|a|b|c|d|e|f]+?)(?=(\W))</regex>
+    </group>
+    <group name="Numerics" color="LightBlue" bgcolor="Gray" bold="false" italic="false" underline="false">
+      <regex value="(\$[a-zA-Z0-9_]*?)">(?&lt;=(\W))(\$[a-zA-Z0-9_]*?)(?=(\W))</regex>
+    </group>  
+    <group name="Identificators" color="DarkBlue" bgcolor="White" bold="false" italic="false" underline="false">
+      <word>and</word>
+      <word>or</word>
+      <word>xor</word>
+      <word>__FILE__</word>
+      <word>exception</word>
+      <word>__LINE__</word>
+      <word>array</word>
+      <word>as</word>
+      <word>break</word>
+      <word>case</word>
+      <word>class</word>
+      <word>const</word>
+      <word>continue</word>
+      <word>declare</word>
+      <word>default</word>
+      <word>die</word>
+      <word>do</word>
+      <word>echo</word>
+      <word>else</word>
+      <word>elseif</word>
+      <word>empty</word>
+      <word>enddeclare</word>
+      <word>endfor</word>
+      <word>endforeach</word>
+      <word>endif</word>
+      <word>endswitch</word>
+      <word>endwhile</word>
+      <word>eval</word>
+      <word>exit</word>
+      <word>extends</word>
+      <word>for</word>
+      <word>foreach</word>
+      <word>function</word>
+      <word>global</word>
+      <word>if</word>
+      <word>include</word>
+      <word>include_once</word>
+      <word>isset</word>
+      <word>list</word>
+      <word>new</word>
+      <word>print</word>
+      <word>require</word>
+      <word>require_once</word>
+      <word>return</word>
+      <word>static</word>
+      <word>switch</word>
+      <word>unset</word>
+      <word>use</word>
+      <word>var</word>
+      <word>while</word>
+      <word>__FUNCTION__</word>
+      <word>__CLASS__</word>
+      <word>__METHOD__</word>
+      <word>final</word>
+      <word>php_user_filter</word>
+      <word>interface</word>
+      <word>implements</word>
+      <word>public</word>
+      <word>private</word>
+      <word>protected</word>
+      <word>abstract</word>
+      <word>clone</word>
+      <word>try</word>
+      <word>catch</word>
+      <word>throw</word>
+      <word>cfunction</word>
+      <word>old_function</word>
+      <word>this</word>
+    </group>
+    <group name="Comments" color="DarkGreen" bgcolor="#eeeeee" bold="false" italic="false" underline="false">
+      <bracket start="//" end="$none" carry="$none" onlybegin="false" />
+      <bracket start="#" end="$none" carry="$none" onlybegin="false" />      
+      <bracket start="/*" end="*/" carry="$any" onlybegin="false" />
+    </group>
+    <group name="Strings" color="DarkRed" bgcolor="White" bold="false" italic="false" underline="false">
+      <bracket start="&apos;" end="&apos;" carry="\" onlybegin="false" />
+      <bracket start="&quot;" end="&quot;" carry="\" onlybegin="false" />
+    </group>
+  </groups>
+</scheme>
+
